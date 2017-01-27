@@ -32,8 +32,11 @@ function drawMazeAndRectangle(rectX, rectY) {
 		context.drawImage(mazeImg, 0, 0);
 		drawRectangle(rectX, rectY, "#0000FF");
 	};
-	var ImgSrc = "http://www.hereandabove.com/cgi-bin/maze?"+columns+"+"+rows+"+"+pathWidth+"+"+wallWidth+"+"+straightLinePercentage+"+0+0+0+255+255+255";
-	 //http://www.hereandabove.com/maze/mazeorig.form.html; 
+	//var ImgSrc = "http://www.hereandabove.com/cgi-bin/maze?"+columns+"+"+rows+"+"+pathWidth+"+"+wallWidth+"+"+straightLinePercentage+"+0+0+0+255+255+255";
+	//try a local maze.gif because we can't load this over http (need https)
+	var ImgSrc = "maze.gif";
+	
+	//http://www.hereandabove.com/maze/mazeorig.form.html; 
 	
 	 //from web:
 	 mazeImg.src = ImgSrc;
